@@ -28,5 +28,13 @@ public class Main {
         {
             System.out.println(num);
         }
+
+        //test binary search
+        BinarySearch binarySearch = new BinarySearch();
+        int[] arr = {2,3,4,10,40};
+        int target = 10;
+
+        int
+
     }
 }
