@@ -17,7 +17,6 @@ public class BinarySearch extends Search {
      */
     @Override
     public int recursiveFind(int[] arr, int target) {
-        System.out.println("ha");
         return 0;
     }
 
