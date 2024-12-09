@@ -5,15 +5,23 @@ public class QuickSort extends Sort {
      * Sort the array arr using quick sort algorithm.
      */
     @Override
-    public void sort(int[] arr) {
-
+    public void sort(int[] arr) 
+    {
+        quickSort(arr, 0, arr.length - 1);
     }
 
     /*
      * Sort the subarray arr[low..high] using quick sort algorithm.
      */
-    private void quickSort(int[] arr, int low, int high) {
+    private void quickSort(int[] arr, int low, int high) 
+    {
+        if(low < high)
+        {
+                int pivotIndex = partition(arr, low, high);
 
+                quickSort(arr, low, pivotIndex - 1);
+                quickSort(arr, pivotIndex + 1, high);
+        }
     }
 
     /*
