@@ -20,12 +20,12 @@ public class Main {
         }
 
         //Test MergeSort
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] mergeArr = { 1, 2, 3, 4, 5 };
         MergeSort mergeSort = new MergeSort();
-        mergeSort.sort(arr);
+        mergeSort.sort(mergeArr);
 
         System.out.println("sorted Array");
-        for(int num : arr)
+        for(int num : mergeArr)
         {
             System.out.println(num);
         }
