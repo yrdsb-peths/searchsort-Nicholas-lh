@@ -25,6 +25,11 @@ public class MergeSort extends Sort {
             right[i - mid] = arr[i];
         }
 
+        sort(left);
+        sort(right);
+
+        merge(arr, left, right);
+
     }
 
     /*
