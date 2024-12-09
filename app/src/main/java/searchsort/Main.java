@@ -23,7 +23,6 @@ public class Main {
         int[] mergeArr = { 1, 2, 3, 4, 5 };
         MergeSort mergeSort = new MergeSort();
         mergeSort.sort(mergeArr);
-
         System.out.println("sorted Array");
         for(int num : mergeArr)
         {
