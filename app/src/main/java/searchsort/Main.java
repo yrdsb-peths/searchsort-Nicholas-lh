@@ -55,6 +55,10 @@ public class Main {
             System.out.println(num);
         }
 
+        //Test exch again
+        int[] arr = {5, 2};
+        Util.exch(arr, 0, 1);
+        System.out.println(arr[0] + arr[1]);
         //Test binary search
         
         //Test insertion sort
