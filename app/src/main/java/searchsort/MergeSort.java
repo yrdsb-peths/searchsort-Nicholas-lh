@@ -58,7 +58,7 @@ public class MergeSort extends Sort {
         }
         while(j < nR)
         {
-            mergeArr[k++] = right[i++];
+            mergeArr[k++] = right[j++];
         }
     }
 }
