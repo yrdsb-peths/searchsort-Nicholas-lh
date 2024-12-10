@@ -29,10 +29,17 @@ public class Main {
             System.out.println(num);
         }
 
-        //test binary search
-        BinarySearch binarySearch = new BinarySearch();
-        int[] array1 = {2,3,4,10,40};
-        int target1 = 10;
+        //Test binary search
+        
+        //Test insertion sort
+
+        //Test linear search
+
+        //Test Median
+
+        //Test quickSort
+
+        //Test Selection Sort
 
 
     }
