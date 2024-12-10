@@ -10,11 +10,8 @@ public class UtilTest {
     public void testExch() {
         int[] arr1 = { 1, 2, 3, 4, 5 };
         Util.exch(arr1, 0, 1);
-        assert arr1[0] == 2;
-        assert arr1[1] == 1;
-        assert arr1[2] == 3;
-        assert arr1[3] == 4;
-        assert arr1[4] == 5;
+        assertArrayEquals(new int[]{2, 1, 3, 4, 5}, arr1);
+
     }
 
     @Test
