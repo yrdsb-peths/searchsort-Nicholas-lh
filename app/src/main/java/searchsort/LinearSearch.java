@@ -6,6 +6,15 @@ public class LinearSearch {
      * Return -1 if target is not found in arr.
      */
     public static int find(int[] arr, int target) {
-        return 0;
+       //Iteration / processing each element
+       for(int i = 0; i < arr.length; i++)
+       {
+
+       }
+        
+        
+        
+        //return -1 if not found
+        return -1;
     }
 }
