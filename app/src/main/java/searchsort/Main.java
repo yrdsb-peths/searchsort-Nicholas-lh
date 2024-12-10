@@ -31,10 +31,9 @@ public class Main {
 
         //test binary search
         BinarySearch binarySearch = new BinarySearch();
-        int[] arr = {2,3,4,10,40};
-        int target = 10;
+        int[] array1 = {2,3,4,10,40};
+        int target1 = 10;
 
-        int
 
     }
 }
