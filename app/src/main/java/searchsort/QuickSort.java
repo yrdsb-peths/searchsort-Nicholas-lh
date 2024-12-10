@@ -45,7 +45,17 @@ public class QuickSort extends Sort {
         }
         
         int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
 
+        return i + 1;
+    }
+
+    private void swap(int[] arr, int i, int j)
+    {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 }

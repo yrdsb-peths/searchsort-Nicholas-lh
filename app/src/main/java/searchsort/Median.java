@@ -10,32 +10,18 @@ public class Median {
      * Find the median of the array arr using QuickSort algorithm.
      */
     public double findQuick(int[] arr) {
-        quickSort(arr, 0, arr.length - 1);
-
-        if(arr.length % 2 == 0)
-        {
-            return(arr[arr.length / 2 -1] + arr[arr.length / 2]) / 2.0;
-        }
-        else
-        {
-            return arr[arr.length/ 2];
-        }
+        QuickSort quickSort = new QuickSort(); //create the instance
+        quickSort.sort(arr);
+        return calculatedMedian(arr);
     }
 
     /**
      * Find the median of the array arr using MergeSort algorithm.
      */
     public double findMerge(int[] arr) {
-        mergeSort(arr, 0, arr.length -1);
-
-        if(arr.length % 2 == 0)
-        {
-            return(arr[arr.length /2 - 1] + arr[arr.length /2]) 2.0;
-        }
-        else
-        {
-            return arr[arr.length /2];
-        }
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.sort(arr);
+        return calculatedMedian(arr);
     }
 
     /**
@@ -54,4 +40,8 @@ public class Median {
         }
     }
 
+    private int calculatedMedian()
+    {
+        return 0;
+    } 
 }
