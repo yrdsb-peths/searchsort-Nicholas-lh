@@ -21,6 +21,10 @@ public class InsertionSort {
                     break; 
                 }
             }
+
+            System.out.println(i);
+            for(int num : arr) System.out.print(num);
+            System.out.println();
         }
     }
 }

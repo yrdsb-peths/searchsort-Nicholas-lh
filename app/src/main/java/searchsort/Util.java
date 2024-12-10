@@ -40,7 +40,8 @@ public class Util {
     {
         int temp = arr [i]; 
         arr[i] = arr[j];
-        arr[i] = temp;
+        //BE CAREFUL HERE, it must correctly assign the right values, I and J
+        arr[j] = temp;
     }
 
     /**
