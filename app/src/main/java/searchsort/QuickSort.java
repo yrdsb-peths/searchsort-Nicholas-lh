@@ -50,12 +50,12 @@ public class QuickSort extends Sort {
 
         return i + 1;
     }
-
-    private void swap(int[] arr, int i, int j)
-    {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
+    /* just a faster way to implement the exch method */
+    //private void swap(int[] arr, int i, int j)
+    //{
+        //int temp = arr[i];
+        //arr[i] = arr[j];
+        //arr[j] = temp;
+    //}
 
 }

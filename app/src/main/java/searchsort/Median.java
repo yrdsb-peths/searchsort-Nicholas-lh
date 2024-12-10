@@ -28,20 +28,19 @@ public class Median {
      * Find the median of the array arr using InsertionSort algorithm.
      */
     public double findInsertion(int[] arr) {
-        insertionSort(arr);
+        InsertionSort.sort(arr);
+        return calculatedMedian(arr);
+    }
 
+    private double calculatedMedian(int[] arr)
+    {
         if(arr.length % 2 == 0)
         {
-            return(arr[arr.length / 2 - 1] + arr[arr.length / 2]) / 2.0;
+            return (arr[arr.length / 2 - 1] + arr[arr.length /2]) / 2.0;
         }
         else
         {
             return arr[arr.length / 2];
         }
-    }
-
-    private int calculatedMedian()
-    {
-        return 0;
     } 
 }
