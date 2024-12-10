@@ -9,11 +9,11 @@ public class LinearSearch {
        //Iteration / processing each element
        for(int i = 0; i < arr.length; i++)
        {
-
+            if(arr[i] == target)
+            {
+                return i;
+            }
        }
-        
-        
-        
         //return -1 if not found
         return -1;
     }
