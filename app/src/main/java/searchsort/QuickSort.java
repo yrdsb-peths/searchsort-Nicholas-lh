@@ -20,6 +20,7 @@ public class QuickSort extends Sort {
                 int pivotIndex = partition(arr, low, high);
 
                 quickSort(arr, low, pivotIndex - 1);
+
                 quickSort(arr, pivotIndex + 1, high);
         }
     }
@@ -29,7 +30,21 @@ public class QuickSort extends Sort {
      * Return the index of the pivot element after partition.
      */
     private int partition(int[] arr, int low, int high) {
-        return 0;
+        int pivot = arr[high];
+        int i = (low - 1);
+
+        for(int j = low; j < high; j++)
+        {
+            if(arr[j] < pivot)
+            {
+                i++; 
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+        int temp = arr[i + 1];
 
     }
 
